@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Online Attendance Management System </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+	</head>
+	<body>
+		<div id="header">
+			
+			<h3>ONLINE ATTENDANCE MANAGEMENT SYSTEM</h3>
+		</div>
+		
+		<div id="navbar">			
+			<ul>
+				<li><a href="">Register New Member</a></li>
+				<li><a href="">Create Attendance Sheet</a></li>
+				<li><a href="http://localhost/select.php">View Attendance</a></li>
+				<li><a href="">Alter/Modify</a></li>
+			</ul>							
+		</div>
+		
+		<div class="sideleft">			
+			<div class="vertmenu">			
+			<ul>
+				<li><a href="">Register New Member</a></li>
+			</ul>							
+		</div>		
+		</div>
+		<div class="sideright">			
+						
+		</div>		
+		<div class="sideright">			
+			
+		</div>
+		
+		
+		<!--div>
+		
+			<img class="imagesidebar" src="flower.jpg">
+		
+		</div-->
+		
+		<div class="main">		
+			<form action="http://localhost/membertype.php" method="post">
+				<p>Please select member type:</p>
+				<input type="radio" name="membertype" value="teacher" id="tc"><label for="tc" style="display: inline" >&nbsp Teacher</label><br/>
+				<input type="radio" name="membertype" value="parent" id="pr"><label for="pr" style="display: inline">&nbsp Parent</label><br/>
+				<input type="radio" name="membertype" value="student" id="st" checked><label for="st" style="display: inline">&nbsp Student</label><br/>
+				<input type="radio" name="membertype" value="other" id="ot"><label for="ot" style="display: inline">&nbsp Other</label><br/><br/>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		
+		<div id="footer">
+			
+			<ul>
+				<li><a href="">About OAMS</a></li>
+				<li><a href="">Careers</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+			
+			&copy; 2017 OAMS.com. All Rights Reserved.
+			
+		</div>
+		
+		<script src="jquery-3.2.1.js"></script>
+		<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function() {		  
+		  
+				$("#tab").tabs();		
+			});		
+		
+		</script>
+
+	</body>
+</html>

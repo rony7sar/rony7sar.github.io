@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Online Attendance Management System </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+	</head>
+	<body>
+		<div id="header">
+			
+			<h3>ONLINE ATTENDANCE MANAGEMENT SYSTEM</h3>
+		</div>
+		
+		<div id="navbar">			
+			<ul>
+				<li><a href="">Register New Member</a></li>
+				<li><a href="">Create Attendance Sheet</a></li>
+				<li><a href="http://localhost/select.php">View Attendance</a></li>
+				<li><a href="">Alter/Modify</a></li>
+			</ul>							
+		</div>
+		
+		<div class="sideleft">			
+			<div class="vertmenu">			
+			<ul>
+				<li><a href="">Create Attendance Sheet</a></li>
+			</ul>							
+		</div>		
+		</div>
+		<div class="sideright">			
+						
+		</div>		
+		<div class="sideright">			
+			
+		</div>
+		
+		
+		<!--div>
+		
+			<img class="imagesidebar" src="flower.jpg">
+		
+		</div-->
+		
+		<div class="main">		
+			<form action="http://localhost/createattendance.php" method="post">
+				
+				<label for="session" style="display:inline">Select:</label>
+				<select id="session" name="session" required>
+					<option selected disabled hidden>Session</option>
+					<option value="15">2015</option>
+					<option value="16">2016</option>
+					<option value="17">2017</option>
+					<option value="18">2018</option>
+					<option value="19">2019</option>
+					<option value="20">2020</option>
+					<option value="21">2021</option>
+					<option value="22">2022</option>
+					<option value="23">2023</option>
+				</select>&nbsp&nbsp&nbsp
+				
+				<label for="course" style="display:inline">Select:</label>
+				<select id="course" name="course" required>
+					<option selected disabled hidden>Course</option>
+					<option value="MCA">MCA</option>
+					<option value="MBA">MBA</option>
+					<option value="MCOM">MCOM</option>
+				</select>&nbsp&nbsp&nbsp
+				
+				<label for="sem" style="display:inline">Select:</label>
+				<select id="sem" name="sem" required>
+					<option selected disabled hidden>SEM</option>
+					<option value="_1SEM_">I</option>
+					<option value="_2SEM_">II</option>
+					<option value="_3SEM_">III</option>
+					<option value="_4SEM_">IV</option>
+					<option value="_5SEM_">V</option>
+					<option value="_6SEM_">VI</option>
+				</select>&nbsp&nbsp&nbsp<br/><br/>
+				
+				<label for="sub" style="display:inline">Enter Subject Code:</label>
+				<input type="text" id="sub" name="sub" required placeholder="e.g., 13MCA41"><br/><br/>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		
+		<div id="footer">
+			
+			<ul>
+				<li><a href="">About OAMS</a></li>
+				<li><a href="">Careers</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+			
+			&copy; 2017 OAMS.com. All Rights Reserved.
+			
+		</div>
+		
+		<script src="jquery-3.2.1.js"></script>
+		<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function() {		  
+		  
+				$("#tab").tabs();		
+			});		
+		
+		</script>
+
+	</body>
+</html>

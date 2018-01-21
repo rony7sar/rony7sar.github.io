@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Online Attendance Management System </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+	</head>
+	<body>
+		<div id="header">
+			
+			<h3>ONLINE ATTENDANCE MANAGEMENT SYSTEM</h3>
+		</div>
+		
+		<div id="navbar">
+			
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Menu Item 1</a></li>
+				<li><a href="">Menu Item 2</a></li>
+				<li><a href="">Menu Item 3</a></li>
+			</ul>
+							
+		</div>
+		
+		<div class="sideright">
+			
+						
+		</div>
+		
+		<div class="sideright">
+			
+			
+		</div>
+		
+		<!--div>
+		
+			<img class="imagesidebar" src="flower.jpg">
+		
+		</div-->
+		
+		<div class="main">		
+			<div id="tab">
+				<ul>
+					<li><a href="#teachers">Teachers</a></li>
+					<li><a href="#parents">Parents</a></li>
+					<li><a href="#students">Students</a></li>
+					<li><a href="#others">Others</a></li>
+				</ul>
+				<div id="teachers">
+					<p> Teachers Log In... </p>
+					<form action="http://localhost/teacherslogin.php" method="post" id="">
+						<div class="row">
+							<label for="userid">User ID:&nbsp</label>
+							<input type="text" id="userid" name="userid"><br/><br/>
+						</div>
+						<div class="row">
+							<label for="pwd">Password:&nbsp</label>
+							<input type="password" id="pwd" name="pwd"><br/><br/>
+						</div>
+						<div class="row">
+							<p></p>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+				<div id="parents">
+					<p> Parents Log In... </p>
+					<form action="http://localhost/parentslogin.php" method="post" id="">
+						<div class="row">
+							<label for="userid">User ID:&nbsp</label>
+							<input type="text" id="userid" name="userid"><br/><br/>
+						</div>
+						<div class="row">
+							<label for="pwd">Password:&nbsp</label>
+							<input type="password" id="pwd" name="pwd"><br/><br/>
+						</div>
+						<div class="row">
+							<p></p>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+				<div id="students">
+					<p> Students Log In... </p>
+					<form action="http://localhost/studentslogin.php" method="post" id="">
+						<div class="row">
+							<label for="userid">User ID:&nbsp</label>
+							<input type="text" id="userid" name="userid"><br/><br/>
+						</div>
+						<div class="row">
+							<label for="pwd">Password:&nbsp</label>
+							<input type="password" id="pwd" name="pwd"><br/><br/>
+						</div>
+						<div class="row">
+							<p></p>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+				<div id="others">
+					<p> Log In Details for Other Users... </p>
+					<form action="http://localhost/otherslogin.php" method="post" id="">
+						<div class="row">
+							<label for="userid">User ID:&nbsp</label>
+							<input type="text" id="userid" name="userid"><br/><br/>
+						</div>
+						<div class="row">
+							<label for="pwd">Password:&nbsp</label>
+							<input type="password" id="pwd" name="pwd"><br/><br/>
+						</div>
+						<div class="row">
+							<p></p>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			
+			<ul>
+				<li><a href="">About OAMS</a></li>
+				<li><a href="">Careers</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+			
+			&copy; 2017 OAMS. All Rights Reserved.
+			
+		</div>
+		
+		<script src="jquery-3.2.1.js"></script>
+		<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function() {		  
+		  
+				$("#tab").tabs();		
+			});		
+		
+		</script>
+
+	</body>
+</html>
